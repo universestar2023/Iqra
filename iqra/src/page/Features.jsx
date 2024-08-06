@@ -40,7 +40,7 @@ export default function Features() {
           </p>
         </div>
         <div className="mx-auto mt-6 max-w-2xl sm:mt-10 lg:mt-18 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-14">
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-16 p-5 bg-white border border-gray-200 rounded-lg shadow-lg">
                 <dt className="text-base font-semibold leading-7 text-gray-900 ml-6">

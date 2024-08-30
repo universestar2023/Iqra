@@ -54,7 +54,7 @@ export default function Features() {
             ))}
           </dl>
           <div className="flex justify-center mt-8">
-            <button className="text-white w-90 h-30 bg-indigo-600 p-4 border-r-4 rounded-lg">
+            <button className="text-white w-90 h-30 bg-indigo-600 p-4 border-none rounded-lg">
               Get Started
             </button>
           </div>

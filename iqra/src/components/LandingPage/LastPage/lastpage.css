@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(217, 236, 244);
+    background-color: rgb(29,39,56);
     padding: 20px;
   }
   
@@ -17,6 +17,7 @@
   
   .text-container {
     text-align: center;
+    color:aliceblue;
   }
   
   .title {
@@ -41,8 +42,8 @@
       display: inline-block;
       padding: 10px 20px;
       border-radius: 45px;
-      border: 1px solid black; /* Green border */
-      background-color: rgb(0, 0, 0); /* Green background */
+      border: 1px solid rgb(237, 84, 53); /* Green border */
+      background-color: rgb(237,84,53); /* Green background */
       color: white; /* White text color */
       text-align: center;
       text-decoration: none;
@@ -53,14 +54,8 @@
     
     /* Hover effect */
     button:hover {
-      background-color: #2164e9; 
-      border-color: #2164e9;
+      opacity: 0.7;  
     }
-    
-    /* Active effect */
-    button2:active {
-      background-color: #175eed; /* Even darker green */
-      border-color: #175eed; /* Even darker green */
-    }
+  
    
   

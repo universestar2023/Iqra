@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
-import logo from "../Images/logo.png";
+import logo from "../Images/Iqralogo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +61,7 @@ const Navbar = () => {
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
                   }
                 >
-                  Contact
+                  Plans
                 </NavLink>
               </li>
               <li>
@@ -71,7 +71,7 @@ const Navbar = () => {
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
                   }
                 >
-                  Github
+                  FAQ
                 </NavLink>
               </li>
             </ul>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 to="#"
                 className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:ring-orange-400 font-medium rounded-lg text-sm px-4 py-2.5"
               >
-                Get started
+                Sign in
               </Link>
             </div>
           </div>

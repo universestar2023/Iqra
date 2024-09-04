@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../page/lowb.png";
+import img from "./lowb.png";
 
 const HomePage = () => {
   return (

@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className="shadow sticky z-50 top-0">
-      <nav className="bg-gray-800 border-gray-200 px-2 lg:px-6 py-2">
+      <nav className="bg-gray-800 border-gray-200 px- lg:px-6 py-2">
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             {/* Decreased logo size */}

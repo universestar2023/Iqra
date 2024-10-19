@@ -29,7 +29,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
+            <Link to='/classx'><div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
               <img
                 src="https://img.freepik.com/free-vector/collection-high-school-students_1262-19750.jpg"
                 alt="Class X Guidance"
@@ -39,7 +39,7 @@ const Home = () => {
               <p className="text-gray-600 mt-2">
                 Explore future pathways and choose the right stream to shape your academic journey.
               </p>
-            </div>
+            </div></Link>
 
             {/* Card 2 */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition">

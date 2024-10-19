@@ -13,7 +13,7 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store"; // Import your Redux store
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux"; // Import Provider from react-redux
-
+import FilteredStreams from './components/LandingPage/MainHome/streams/classx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/classx",
+    element: <FilteredStreams />,
   },
   {
     path: "/test",

@@ -14,6 +14,7 @@ import store from "./redux/store"; // Import your Redux store
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux"; // Import Provider from react-redux
 import FilteredStreams from './components/LandingPage/MainHome/streams/classx';
+import Chatbot from './components/LandingPage/MainHome/chatbot/Chatbot';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <Main></Main>,
+  },
+  {
+    path: "/chatbot",
+    element: <Chatbot/>,
   },
   {
     path: "/test/quiz",

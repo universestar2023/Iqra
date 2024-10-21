@@ -42,7 +42,21 @@ export async function getResult(req, res) {
     res.json({ error });
   }
 }
+export async function getResultbyId(req,res){
+  try {
+    const { userId } = req.params;
+    const results = await Results.find({ userId });
 
+    if (!results) {
+      return res.status(404).send({ message: "Results not found" });
+    }
+
+    res.json(results);
+  } catch (error) {
+    console.error("Error fetching results:", error);
+    res.status(500).send({ message: "Internal Server Error" });
+  }
+}
 /** post all result */
 export async function storeResult(req, res) {
   try {

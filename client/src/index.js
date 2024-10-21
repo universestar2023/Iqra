@@ -14,7 +14,13 @@ import store from "./redux/store"; // Import your Redux store
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux"; // Import Provider from react-redux
 import FilteredStreams from './components/LandingPage/MainHome/streams/classx';
+
 import Chatbot from './components/LandingPage/MainHome/chatbot/Chatbot';
+import DashboardPage from './components/UserProfile/dashboard.jsx'
+import AboutUs from './components/LandingPage/Aboutus/aboutus.jsx'
+import FeedbackForm from './components/LandingPage/Feedback form/feedback.jsx';
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +31,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/sign",
+    path: "/signup",
     element: <Signup />,
   },
   {
@@ -60,6 +66,18 @@ const router = createBrowserRouter([
       </CheckUserExist>
     ),
   },
+  {
+    path:"/userprofile",
+    element:<DashboardPage/>
+  },
+  {
+    path:"/about",
+    element:<AboutUs/>
+  },
+  {
+    path:"/feedback",
+    element:<FeedbackForm/>
+  }
 ]);
 
 

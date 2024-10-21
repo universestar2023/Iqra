@@ -49,7 +49,7 @@ export default function Quiz() {
       {/* Display questions with question number */}
       <Questions onChecked={onChecked} questionNumber={trace + 1} />
 
-      <div className="flex justify-between mt-6">
+      <div className="flex justify-center gap-5 mt-6">
         {trace > 0 ? (
           <button
             className="bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-400 transition duration-200"

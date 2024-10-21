@@ -39,7 +39,7 @@ export default function ResultTable() {
         <thead className="bg-blue-600 text-white">
           <tr>
             <th className="py-2 px-4 border-b">Name</th>
-            <th className="py-2 px-4 border-b">Attempts</th>
+            <th className="py-2 px-4 border-b">Questions Attempted</th>
             <th className="py-2 px-4 border-b">Earn Points</th>
           </tr>
         </thead>

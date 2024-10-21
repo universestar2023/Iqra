@@ -11,9 +11,9 @@ export default function Main() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.post(
-          `${process.env.REACT_APP_SERVER_HOSTNAME}/api/route/questions`
-        );
+        const url = `${process.env.REACT_APP_SERVER_HOSTNAME}/api/route/questions`;
+        console.log("Fetching data from:", url);  // Log the URL
+        const response = await axios.post(url);
         console.log("Data fetched successfully:", response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -53,7 +53,7 @@ export default function Main() {
 
       <div className="flex justify-between w-full max-w-lg">
         <div className="flex-1 mr-2">
-          <Link to="/" className="w-full block text-center bg-red-500 text-white py-2 rounded-md hover:bg-red-600 transition duration-300">
+          <Link to="/home" className="w-full block text-center bg-red-500 text-white py-2 rounded-md hover:bg-red-600 transition duration-300">
             Back
           </Link>
         </div>

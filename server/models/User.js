@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import Joi from "joi";
 import passwordComplexity from "joi-password-complexity";
 
-// const SECRETKEY;
+// const SECRETKEY=;
 
 const userSchema = new mongoose.Schema({
     firstName: { type: String, required: true },
@@ -17,8 +17,7 @@ userSchema.methods.generateAuthToken = function () {
         expiresIn: "7d",
     });
     return token;
-};
-
+}
 const User1 = mongoose.model("user", userSchema);
 
 const validate1 = (data) => {

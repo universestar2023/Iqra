@@ -51,9 +51,9 @@ export default function ResultTable() {
           )}
           {data.map((v, i) => (
             <tr className="hover:bg-gray-200 transition-colors duration-200" key={i}>
-              <td className="py-2 px-4 border-b">{v?.username || ""}</td>
-              <td className="py-2 px-4 border-b">{v?.attempts || 0}</td>
-              <td className="py-2 px-4 border-b">{v?.points || 0}</td>
+              <td className="py-2 px-4 border-b text-center">{v?.username || ""}</td>
+              <td className="py-2 px-4 border-b text-center">{v?.attempts || 0}</td>
+              <td className="py-2 px-4 border-b text-center">{v?.points || 0}</td>
             </tr>
           ))}
         </tbody>

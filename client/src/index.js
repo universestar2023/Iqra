@@ -12,6 +12,7 @@ import { CheckUserExist } from "./helper/helper";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store"; // Import your Redux store
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HollandCodeTest from './components/LandingPage/MainHome/tt/tts';
 import { Provider } from "react-redux"; // Import Provider from react-redux
 import FilteredStreams from './components/LandingPage/MainHome/streams/classx';
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/tt",
+    element: <HollandCodeTest />,
   },
   {
     path: "/classx",

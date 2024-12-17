@@ -56,16 +56,16 @@ const Login = () => {
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           {error && <div className="text-red-500 text-sm">{error}</div>}
-          <button
+          <Link to='/home'><button
             type="submit"
-            className="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-600 transition duration-300"
+            className="w-full mt-3 bg-green-500 text-white py-2 rounded-md hover:bg-green-600 transition duration-300"
           >
             Sign In
-          </button>
+          </button></Link>
         </form>
         <div className="mt-4 text-center">
           <h2 className="text-gray-600">New Here?</h2>
-          <Link to="/signup">
+          <Link to="/sign">
             <button className="mt-2 w-full bg-white border border-gray-300 text-gray-700 py-2 rounded-md hover:bg-gray-100 transition duration-300">
               Sign Up
             </button>

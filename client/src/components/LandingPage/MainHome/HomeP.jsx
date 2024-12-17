@@ -16,7 +16,7 @@ const Home = () => {
           <p className="text-lg mb-8">
             Explore your career options and make informed decisions for a brighter future.
           </p>
-          <Link to='/test'><button className="bg-white text-blue-600 px-6 py-3 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition">
+          <Link to='/tt'><button className="bg-white text-blue-600 px-6 py-3 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition">
             Get Started Now
           </button></Link>
         </section>

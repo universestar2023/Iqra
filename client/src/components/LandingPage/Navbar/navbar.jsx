@@ -45,32 +45,32 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/home"
+                  to="/signup"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
                   }
                 >
-                  About
+                  Features
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/signup"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
+                  }
+                >
+                  Insights
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/signup"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
                   }
                 >
                   Plans
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/github"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
-                  }
-                >
-                  FAQ
                 </NavLink>
               </li>
             </ul>
@@ -82,10 +82,10 @@ const Navbar = () => {
                 Log in
               </Link>
               <Link
-                to="/sign"
+                to="/signup"
                 className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:ring-orange-400 font-medium rounded-lg text-sm px-4 py-2.5"
               >
-                Sign in
+                Sign up
               </Link>
             </div>
           </div>

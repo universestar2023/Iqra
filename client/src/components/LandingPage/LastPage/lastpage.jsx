@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const LastPage = () => {
   return (
     <div className="min-h-[60vh] bg-indigo-200 flex flex-col justify-center items-center">
@@ -75,9 +75,11 @@ const LastPage = () => {
       </div>
 
       <div className="flex justify-center mt-8 mb-10">
+            <Link to="/signup">
             <button className="text-white bg-indigo-600 px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-900 transition duration-200">
               Get Started
             </button>
+            </Link>
           </div>
     </div>
   );

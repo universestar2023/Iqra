@@ -2,6 +2,7 @@ import PlaylistAddCheckIcon from '@mui/icons-material/PlaylistAddCheck';
 import SchoolIcon from '@mui/icons-material/School';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -54,9 +55,11 @@ export default function Features() {
             ))}
           </dl>
           <div className="flex justify-center mt-8">
+            <Link to="/signup">
             <button className="text-white bg-indigo-600 px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-900 transition duration-200">
               Get Started
             </button>
+            </Link>
           </div>
         </div>
       </div>

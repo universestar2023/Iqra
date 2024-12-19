@@ -63,7 +63,7 @@ const FilteredStreams = () => {
     };
   
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-blue-100 p-8">
+      <div className="min-h-screen bg-blue-300 p-8">
         <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8 tracking-wide">
           Explore Streams After 10th
         </h1>
@@ -73,7 +73,7 @@ const FilteredStreams = () => {
           <input
             type="text"
             placeholder="Search by stream..."
-            className="p-3 border border-gray-300 rounded-lg shadow-md w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
+            className="p-3 border border-blue-300 rounded-lg shadow-md w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />

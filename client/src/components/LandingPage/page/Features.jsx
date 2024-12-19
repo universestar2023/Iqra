@@ -29,6 +29,7 @@ const features = [
 
 export default function Features() {
   return (
+    <section id='features'>
     <div className="bg-indigo-100 py-8 sm:py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
@@ -64,5 +65,6 @@ export default function Features() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

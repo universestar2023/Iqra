@@ -2,6 +2,7 @@ import React from 'react';
 
 function Subscription() {
   return (
+    <section id='plan'>
     <div className="flex flex-col justify-center items-center py-10 bg-gray-900 text-white">
       {/* Title Section */}
       <div className="mx-auto max-w-2xl lg:text-center mb-8"> {/* Added margin-bottom */}
@@ -70,6 +71,7 @@ function Subscription() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

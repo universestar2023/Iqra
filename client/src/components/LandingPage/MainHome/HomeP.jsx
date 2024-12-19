@@ -16,8 +16,8 @@ const Home = () => {
           <p className="text-lg mb-8">
             Explore your career options and make informed decisions for a brighter future.
           </p>
-          <Link to='/tt'><button className="bg-white text-blue-600 px-6 py-3 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition">
-            Get Started Now
+          <Link to='/watch'><button className="bg-white text-blue-600 px-6 py-3 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition">
+            Watch
           </button></Link>
         </section>
 
@@ -42,7 +42,9 @@ const Home = () => {
             </div></Link>
 
             {/* Card 2 */}
+          
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
+              <Link to='/ww'>
               <img
                 src="https://img.freepik.com/premium-vector/happy-male-student-portrait-with-smiling-friends-group-outdoors_1316704-57454.jpg?semt=ais_hybrid"
                 alt="Class XII Guidance"
@@ -51,12 +53,12 @@ const Home = () => {
               <h3 className="text-xl font-semibold text-gray-800">Class XII</h3>
               <p className="text-gray-600 mt-2">
                 Unlock higher education options and get guidance on courses and careers.
-              </p>
+              </p></Link>
             </div>
 
             {/* Card 3 */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
-              <img
+              <Link to='/ug'><img
                 src="https://img.freepik.com/free-vector/happy-diverse-students-celebrating-graduation-from-school_74855-5853.jpg"
                 alt="Undergraduate Guidance"
                 className="w-full h-40 object-cover rounded-lg mb-4"
@@ -64,11 +66,12 @@ const Home = () => {
               <h3 className="text-xl font-semibold text-gray-800">Undergraduate</h3>
               <p className="text-gray-600 mt-2">
                 Plan your professional journey and explore postgraduate options.
-              </p>
+              </p></Link>
             </div>
 
             {/* Card 4 */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
+              <Link to='/job'>
               <img
                 src="https://img.freepik.com/free-vector/colleagues-working-together-project_74855-6308.jpg"
                 alt="Job Market Guidance"
@@ -77,7 +80,7 @@ const Home = () => {
               <h3 className="text-xl font-semibold text-gray-800">Job Market</h3>
               <p className="text-gray-600 mt-2">
                 Navigate the job market and receive expert advice on securing jobs.
-              </p>
+              </p></Link>
             </div>
           </div>
         </section>
@@ -112,13 +115,13 @@ const Home = () => {
 
         {/* Call to Action Section */}
         <section className="bg-blue-600 mb-5 rounded-lg shadow-lg text-white py-16 px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="text-3xl font-bold mb-4">Explore careers Today!</h2>
           <p className="text-lg mb-8">
             Join thousands of students in making informed career decisions.
           </p>
-          <button className="bg-white text-blue-600 px-6 py-3 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition">
-            Sign Up Today
-          </button>
+          <Link to='/game'> <button className="bg-white text-blue-600 px-6 py-3 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition">
+            Start
+          </button></Link>
         </section>
       </div>
     </div>

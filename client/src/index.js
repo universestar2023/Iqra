@@ -20,12 +20,40 @@ import Chatbot from './components/LandingPage/MainHome/chatbot/Chatbot';
 import DashboardPage from './components/UserProfile/dashboard.jsx'
 import AboutUs from './components/LandingPage/Aboutus/aboutus.jsx'
 import FeedbackForm from './components/LandingPage/Feedback form/feedback.jsx';
-
-
+import WorkInProgress from './components/LandingPage/MainHome/class12.jsx';
+import JobInsights from './components/LandingPage/MainHome/job.jsx';
+import UndergraduateInfo from './components/LandingPage/MainHome/ug.jsx';
+import CareerExplorationGame from './components/LandingPage/MainHome/game.jsx';
+import Watch from './components/LandingPage/MainHome/watch.jsx';
+import CareerDevelopmentRoadmap from './components/LandingPage/MainHome/career.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/ug",
+    element: <UndergraduateInfo />,
+  },
+  {
+  path: "/watch",
+  element: <Watch />,
+ },
+  {
+    path: "/game",
+    element: <CareerExplorationGame />,
+  },
+  {
+    path: "/career",
+    element: <CareerDevelopmentRoadmap />,
+  },
+  {
+    path: "/job",
+    element: <JobInsights />,
+  },
+  {
+    path: "/ww",
+    element: <WorkInProgress />,
   },
   {
     path: "/home",

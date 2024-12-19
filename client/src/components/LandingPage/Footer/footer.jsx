@@ -4,6 +4,7 @@ import logo from "../Images/Iqralogo.png";
 
 function Footer() {
   return (
+    <section id='foot'>
     <footer className="bg-gray-950 py-8 md:py-12 text-white">
       <div className="container max-w-7xl px-8 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         
@@ -88,6 +89,7 @@ function Footer() {
         </div>
       </div>
     </footer>
+    </section>
   );
 }
 

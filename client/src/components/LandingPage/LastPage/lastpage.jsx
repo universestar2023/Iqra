@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const LastPage = () => {
   return (
+    <section id="insight">
     <div className="min-h-[60vh] bg-indigo-200 flex flex-col justify-center items-center">
       {/* Heading */}
       <h2 className="text-4xl font-bold text-black mt-10 mb-3">Insights</h2>
@@ -82,6 +83,7 @@ const LastPage = () => {
             </Link>
           </div>
     </div>
+    </section>
   );
 };
 

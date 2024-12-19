@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
+    <section id="home">
     <div className="max-h-screen bg-white relative">
       {/* Fixed Centered Logo */}
       <div className="absolute inset-0 flex justify-center items-center z-0">
@@ -35,6 +36,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

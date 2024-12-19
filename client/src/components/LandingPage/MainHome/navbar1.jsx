@@ -56,8 +56,6 @@ const Sidebar = () => {
               {isOpen && <span className="text-lg">Home</span>}
             </Link>
 
-          
-
             {/* Assessment */}
             <Link
               to="/test"
@@ -77,6 +75,27 @@ const Sidebar = () => {
                 />
               </svg>
               {isOpen && <span className="text-lg">Assessment</span>}
+            </Link>
+            <Link
+              to="/career"
+              className="flex items-center space-x-4 p-2 hover:bg-blue-700 rounded-lg transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-journal-bookmark"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8"
+                />
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+              </svg>
+              {isOpen && <span className="text-lg">Roadmap</span>}
             </Link>
 
             {/* About Us */}
@@ -98,10 +117,9 @@ const Sidebar = () => {
               {isOpen && <span className="text-lg">About Us</span>}
             </Link>
 
-
             <a
               href="/chatbot"
-              className="flex items-center space-x-4 p-2 hover:bg-red-700 rounded-lg transition"
+              className="flex items-center space-x-4 p-2 hover:bg-blue-700 rounded-lg transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -116,8 +134,8 @@ const Sidebar = () => {
               </svg>
               {isOpen && <span className="text-lg">Chatbot</span>}
             </a>
-              {/* Features */}
-              <Link
+            {/* Features */}
+            <Link
               to="/feedback"
               className="flex items-center space-x-4 p-2 hover:bg-blue-700 rounded-lg transition"
             >
@@ -136,7 +154,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="#"
-              className="flex items-center space-x-4 p-2 hover:bg-blue-700 rounded-lg transition"
+              className="flex items-center space-x-4 p-2 hover:bg-red-700 rounded-lg transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

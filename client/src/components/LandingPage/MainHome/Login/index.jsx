@@ -13,6 +13,12 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Ensure both email and password fields are filled
+    if (!data.email || !data.password) {
+      setError("Both fields are required");
+      return;
+    }
+
     try {
       const url = "http://localhost:8080/api/auth"; // Ensure this is correct
       const { data: res } = await axios.post(url, data);
@@ -51,14 +57,19 @@ const Login = () => {
           {error && <div className="text-red-500 text-sm">{error}</div>}
           <Link to='/home'><button
             type="submit"
-            className="w-full mt-3 bg-green-500 text-white py-2 rounded-md hover:bg-green-600 transition duration-300"
+            disabled={!data.email || !data.password} // Disable if either field is empty
+            className={`w-full mt-3 py-2 rounded-md transition duration-300 ${
+              !data.email || !data.password
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-green-500 text-white hover:bg-green-600"
+            }`}
           >
             Sign in
           </button></Link>
         </form>
         <div className="mt-4 text-center">
           <h2 className="text-gray-600">New Here?</h2>
-          <Link to="/sign">
+          <Link to="/signup">
             <button className="mt-2 w-full bg-white border border-gray-300 text-gray-700 py-2 rounded-md hover:bg-gray-100 transition duration-300">
               Sign Up
             </button>

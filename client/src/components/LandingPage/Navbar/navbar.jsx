@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
 import logo from "../Images/Newlogo.png";
 
 const Navbar = () => {
@@ -26,52 +26,54 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
           <div
-            className={`lg:flex lg:items-center lg:space-x-8 ${isOpen ? "block" : "hidden"} lg:block lg:static lg:bg-transparent absolute top-16 left-0 w-full bg-gray-700 transition-all duration-300 ease-in-out`}
+            className={`lg:flex lg:items-center lg:space-x-8 ${
+              isOpen ? "block" : "hidden"
+            } lg:block lg:static lg:bg-transparent absolute top-16 left-0 w-full bg-gray-700 transition-all duration-300 ease-in-out`}
           >
             <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:mt-0 lg:items-center ml-auto">
               <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
-                  }
+                <a
+                  href="#home"
+                  className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0"
+
                 >
                   Home
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to="/signup"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
-                  }
+                <a
+                  href="#features"
+                  className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0"
                 >
                   Features
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to="/signup"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
-                  }
+                <a
+                  href="#insight"
+                  className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0"
+
                 >
                   Insights
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to="/signup"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-400" : "text-gray-200"} border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0`
-                  }
+                <a
+                  href="#plan"
+                  className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-400 lg:p-0"
+
                 >
                   Plans
-                </NavLink>
+                </a>
               </li>
             </ul>
             <div className="flex flex-col lg:flex-row lg:space-x-4 lg:ml-auto lg:mt-0 mt-4 lg:items-center">
@@ -96,4 +98,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -4,13 +4,13 @@ import { Briefcase, Book, GraduationCap, Target, User, Lightbulb } from 'lucide-
 const CareerDevelopmentRoadmap = () => {
     return (
         <div className="bg-gradient-to-r from-blue-300 to-indigo-100 text-white min-h-screen flex flex-col items-center justify-center p-8">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto relative">
                 <h1 className="text-4xl font-bold text-center text-black mb-12">Career Development Roadmap</h1>
 
                 {/* Roadmap Steps */}
-                <div className="flex flex-wrap justify-center space-x-10">
+                <div className="flex flex-wrap justify-center space-x-10 relative">
                     {/* Step 1 */}
-                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center">
+                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center relative">
                         <div className="mb-4 text-blue-500">
                             <GraduationCap className="w-12 h-12 mx-auto" />
                         </div>
@@ -18,10 +18,12 @@ const CareerDevelopmentRoadmap = () => {
                         <p className="text-gray-600 mt-2">
                             Complete your high school education with a focus on subjects that align with your future career path.
                         </p>
+                        {/* Connector line to next step */}
+                        <div className="absolute top-1/2 right-0 w-10 h-2 bg-blue-500 transform translate-x-10 translate-y-1/2"></div>
                     </div>
 
                     {/* Step 2 */}
-                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center">
+                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center relative">
                         <div className="mb-4 text-blue-500">
                             <Book className="w-12 h-12 mx-auto" />
                         </div>
@@ -29,10 +31,12 @@ const CareerDevelopmentRoadmap = () => {
                         <p className="text-gray-600 mt-2">
                             Enroll in a relevant undergraduate program based on your chosen field of interest (Arts, Science, Engineering, etc.).
                         </p>
+                        {/* Connector line to next step */}
+                        <div className="absolute top-1/2 right-0 w-10 h-2 bg-blue-500 transform translate-x-10 translate-y-1/2"></div>
                     </div>
 
                     {/* Step 3 */}
-                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center">
+                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center relative">
                         <div className="mb-4 text-blue-500">
                             <Lightbulb className="w-12 h-12 mx-auto" />
                         </div>
@@ -40,10 +44,12 @@ const CareerDevelopmentRoadmap = () => {
                         <p className="text-gray-600 mt-2">
                             Focus on gaining practical skills through online courses, internships, and certifications to boost your expertise.
                         </p>
+                        {/* Connector line to next step */}
+                        <div className="absolute top-1/2 right-0 w-10 h-2 bg-blue-500 transform translate-x-10 translate-y-1/2"></div>
                     </div>
 
                     {/* Step 4 */}
-                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center">
+                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center relative">
                         <div className="mb-4 text-blue-500">
                             <Target className="w-12 h-12 mx-auto" />
                         </div>
@@ -51,10 +57,11 @@ const CareerDevelopmentRoadmap = () => {
                         <p className="text-gray-600 mt-2">
                             Set clear career goals and create a roadmap to achieve them, focusing on your desired job role and field.
                         </p>
+                        {/* Connector line to next step */}
                     </div>
 
                     {/* Step 5 */}
-                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center">
+                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center relative">
                         <div className="mb-4 text-blue-500">
                             <User className="w-12 h-12 mx-auto" />
                         </div>
@@ -62,10 +69,12 @@ const CareerDevelopmentRoadmap = () => {
                         <p className="text-gray-600 mt-2">
                             Connect with industry professionals, attend workshops, and build a network to enhance job opportunities.
                         </p>
+                        {/* Connector line to next step */}
+                        <div className="absolute top-1/2 right-0 w-10 h-2 bg-blue-500 transform translate-x-10 translate-y-1/2"></div>
                     </div>
 
                     {/* Step 6 */}
-                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center">
+                    <div className="w-full sm:w-72 bg-white rounded-lg shadow-lg p-6 mb-8 text-center relative">
                         <div className="mb-4 text-blue-500">
                             <Briefcase className="w-12 h-12 mx-auto" />
                         </div>

@@ -27,6 +27,7 @@ const authMiddleware = async (req, res, next) => {
                 }
 
                 req.user = user; // Attach user information to the request object
+                
                 console.log("Authenticated user:", user);
                 next();
             });

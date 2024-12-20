@@ -136,14 +136,7 @@ const Dashboard = () => {
         />
     </div>
 </div>
-
-
-
-
-
-      {/* Leaderboard Section */}
-      <ResultTable />
-      <CareerResult selectedAnswers={selectedAnswers}/>
+      {/* <CareerResult selectedAnswers={selectedAnswers}/> */}
     </div>
   );
 };

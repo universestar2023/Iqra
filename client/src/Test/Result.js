@@ -138,45 +138,7 @@ export default function Result() {
 
   return (
     <div className="container mx-auto p-6">
-      <div className="bg-white shadow-lg rounded-lg p-6">
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Result
-        </h1>
-
-        <div className="flex flex-col space-y-4">
-          <div className="flex justify-between">
-            <span className="font-semibold">Username:</span>
-            <span className="font-bold text-gray-700">{userId || ""}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">Total Quiz Points:</span>
-            <span className="font-bold text-gray-700">{totalPoints || 0}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">Total Questions:</span>
-            <span className="font-bold text-gray-700">{queue.length || 0}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">Total Attempts:</span>
-            <span className="font-bold text-gray-700">{attempts || 0}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">Total Earn Points:</span>
-            <span className="font-bold text-gray-700">{earnPoints || 0}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">Quiz Result:</span>
-            <span
-              className={`font-bold ${
-                flag ? "text-green-500" : "text-red-500"
-              }`}
-            >
-              {flag ? "Passed" : "Failed"}
-            </span>
-          </div>
-        </div>
-      </div>
-
+      <CareerResult selectedAnswers={selectedAnswers} />
       <div className="mt-6 flex justify-center">
         <Link
           className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition duration-200"
@@ -186,12 +148,6 @@ export default function Result() {
           Restart
         </Link>
       </div>
-
-      <div className="container mt-8">
-        {/* Result table */}
-        <ResultTable />
-      </div>
-      <CareerResult selectedAnswers={selectedAnswers} />
     </div>
   );
 }

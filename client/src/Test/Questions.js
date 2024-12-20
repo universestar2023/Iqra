@@ -94,8 +94,10 @@ export default function Questions({ onChecked, questionNumber }) {
   // Reset checked state when the trace changes (i.e., when the question changes)
   useEffect(() => {
     setChecked(undefined);  // Reset the checked value when moving to the next question
+    
   }, [trace]);
 
+  
   useEffect(() => {
     dispatch(updateResult({ trace, checked }));
   }, [checked, trace]);

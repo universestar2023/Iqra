@@ -3,7 +3,8 @@ import RotatingMessages from "./RotatingMessages";
 import axios from "axios";
 import ResultTable from "../../../Test/ResultTable";
 import profile from "../../LandingPage/Images/profile.jpg"
-
+import CareerResult from "../../../Test/CarrerResult";
+import { useSelector } from "react-redux";
 const user = {
   firstName: "John",
   lastName: "Doe",
@@ -84,6 +85,7 @@ const Leaderboard = () => {
 
 
 const Dashboard = () => {
+  const selectedAnswers = useSelector((state) => state.result.result);
   return (
     <div className="container mx-auto p-4">
       {/* User Info Section */}
@@ -134,13 +136,7 @@ const Dashboard = () => {
         />
     </div>
 </div>
-
-
-
-
-
-      {/* Leaderboard Section */}
-      <ResultTable />
+      {/* <CareerResult selectedAnswers={selectedAnswers}/> */}
     </div>
   );
 };
